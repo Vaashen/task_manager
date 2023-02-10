@@ -25,7 +25,7 @@ However if a normal user logs in they will only be able to: add a task, view all
 >## How to run the Program
 First you will need to create a folder, and inside the folder, copy and paste the task_manager.py, tasks.txt and user.txt files in it.
 
-Next you will need an editor to run the program on, I would strongly recommend you use Visual Studio Code, as it is very easy and simple to use and setup.
+Next you will need an editor to run the program on, I would strongly recommend you use Visual Studio Code, as it is very easy and simple to use and setup.if you do not have VSC installeed on your device, tap [here](https://code.visualstudio.com/download) to download it, click on the device you are using and wait for it to download, once done, open and follow the setup instructions.
 
 In VSC, on the top left hand side, you will see a tap called "File" tap on it and select "Open Folder". Find the folder you created that contians the files and double click on that folder. Your VSC should now have the files openeed on the left and side.
 
