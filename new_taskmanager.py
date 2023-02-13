@@ -127,7 +127,7 @@ def add_task():
         # writing the formatted line to the file
         # closing the file
         # calling the menu() again
-        with open('tasks.txt', 'a') as f:
+        with open('user-tasks.txt', 'a') as f:
             f.writelines(task_info)
 
         menu()
@@ -139,7 +139,7 @@ def add_task():
 # the function will open the tasks.txt file and split each line 
 # the task will then take each index once the line is split and store it in a variable 
 def view_all():
-    with open('tasks.txt', 'r') as f:
+    with open('user-tasks.txt', 'r') as f:
         for line in f:
             information = line.split(',')
             task = information[1]
@@ -178,7 +178,7 @@ def view_mine():
         
 # opening the tasks.txt file
 # using a for loop to read each line in the file
-    with open('tasks.txt', 'r') as f:
+    with open('user-tasks.txt', 'r') as f:
         for line in f:
             info = line.strip().split(', ')
             all_tasks.append(info)
@@ -250,7 +250,7 @@ Choose an option: ''').lower()
                 print('Please choose from 1 or -1.')
             
             # writing the new changes back to the task.txt file
-            with open('tasks.txt', 'r+') as file:
+            with open('user-tasks.txt', 'r+') as file:
                 for x in all_tasks:
                     x = ', '.join(x)
                     x = x + '\n'
@@ -270,7 +270,7 @@ def generate_reports():
     incomplete_task_dick = {}
     uncomplete_overdue_dict = {}
 
-    with open('tasks.txt', 'r') as f:
+    with open('user-tasks.txt', 'r') as f:
         for line in f:
             num_tasks += 1
             line_list = line.strip().split(', ')
